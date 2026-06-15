@@ -3,6 +3,9 @@
 @import url('layouts/header.css');
 @import url('layouts/footer.css');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,5 +13,28 @@
 }
 
 html {
+    font-size: 62.5%;
     scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 4.4rem;
+}
+
+.container {
+    padding: 0 6%;
 }

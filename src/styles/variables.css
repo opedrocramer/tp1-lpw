@@ -1,0 +1,11 @@
+:root {
+    --violet-900: #11052c;
+    --violet-700: #3d087b;
+    --pink-500: #f43b86;
+    --yellow-300: #ffe459;
+
+    --background-primary: var(--violet-900);
+    --background-secondary: var(--violet-700);
+    --text-heading: var(--pink-500);
+    --accent: var(--yellow-300);
+}
