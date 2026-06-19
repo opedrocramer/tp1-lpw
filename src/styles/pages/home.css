@@ -1,34 +1,6 @@
-.gen-list {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 1rem;
-
-    .gen-card {
-        grid-column: span 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 150px;
-        background-color: #FFE459;
-
-        &.half-card {
-            grid-column: span 1;
-        }
-    }
-}
-
-section {
-    margin-bottom: 6rem;
-
-    & h2 {
-        margin-bottom: 2rem;
-    }
-}
-
 #hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/hero.webp");
-    height: 60vh;
+    height: calc(100vh - 10rem);
     padding: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,5 +14,36 @@ section {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
+    }
+}
+
+.gen-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+
+    .gen-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../../assets/images/card-bg.jpg');
+        transition: all 300ms ease-out;
+        text-decoration: none;
+        font-family: "Pixelify Sans", sans-serif;
+        font-size: 3rem;
+        color: var(--pink-500);
+        text-shadow: 2px 2px #000;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#recommendations {
+    & ol {
+        list-style-position: inside;
     }
 }

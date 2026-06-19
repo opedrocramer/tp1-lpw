@@ -2,4 +2,7 @@
     display: flex;
     justify-content: flex-start;
     padding: 3rem 0;
+    background-color: var(--violet-900);
+    font-family: "Pixelify Sans", sans-serif;
+    color: var(--pink-500);
 }
