@@ -4,71 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="src/assets/images/favicon.ico" type="image/x-icon">
+    <title>RetroEvo</title>
     <link rel="stylesheet" href="src/styles/global.css">
     <link rel="stylesheet" href="src/styles/pages/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="page-header">
-        <div class="container">
-            <img src="" alt="logo do site" class="logo">
+        <nav class="navbar">
+            <a href="/">
+                <img src="src/assets/images/logo-lpw.png" alt="logo do site" class="logo">
+            </a>
 
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#generations">Gerações</a></li>
-                    <li><a href="#recommendations">Recomendações</a></li>
-                    <li><a href="#about">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
+            <button class="btn btn-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+
+            <ul id="nav-links">
+                <li><a href="#generations">Gerações</a></li>
+                <li><a href="#recommendations">Recomendações</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="hero">
-            <h1>Lorem ipsum dolor sit.</h1>
-        </section>
-
-        <section id="generations">
-            <div class="container">
-                <h2>Gerações</h1>
-                    <div class="gen-list">
-                        <a href="pages/generation-1.html" class="gen-card">
-                            Lorem
-                        </a>
-                        <a href="pages/generation-1.html" class="gen-card">
-                            1ª geração
-                        </a>
-                        <a href="pages/generation-2.html" class="gen-card">
-                            2ª geração
-                        </a>
-                        <a href="pages/generation-3.html" class="gen-card">
-                            3ª geração
-                        </a>
-                        <a href="pages/generation-4.html" class="gen-card">
-                            4ª geração
-                        </a>
-                        <a href="pages/generation-5.html" class="gen-card">
-                            5ª geração
-                        </a>
-                        <a href="pages/generation-6.html" class="gen-card">
-                            6ª geração
-                        </a>
-                        <a href="pages/generation-7.html" class="gen-card">
-                            7ª geração
-                        </a>
-                        <a href="pages/generation-8.html" class="gen-card">
-                            8ª geração
-                        </a>
-                        <a href="pages/generation-9.html" class="gen-card">
-                            9ª geração
-                        </a>
-                    </div>
+            <div class="hero-text">
+                <h1>RetroEvo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             </div>
         </section>
 
-        <section id="recommendations">
-            <div class="container">
+        <div class="container">
+            <section id="generations">
+
+                <h2>Gerações</h1>
+                    <div class="gen-list">
+                        <div class="gen-card image-card">
+                            <img src="src/assets/images/cool-guy_cropped.png" alt="cara apoiado na parede">
+                        </div>
+                        <a href="pages/generation-1.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>1ª geração</h3>
+                        </a>
+                        <a href="pages/generation-2.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>2ª geração</h3>
+                        </a>
+                        <a href="pages/generation-3.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>3ª geração</h3>
+                        </a>
+                        <a href="pages/generation-4.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>4ª geração</h3>
+                        </a>
+                        <a href="pages/generation-5.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>5ª geração</h3>
+                        </a>
+                        <a href="pages/generation-6.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>6ª geração</h3>
+                        </a>
+                        <a href="pages/generation-7.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>7ª geração</h3>
+                        </a>
+                        <a href="pages/generation-8.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>8ª geração</h3>
+                        </a>
+                        <a href="pages/generation-9.html" target="_blank" class="gen-card">
+                            <div class="dark-overlay"></div>
+                            <h3>9ª geração</h3>
+                        </a>
+                    </div>
+            </section>
+
+            <section id="recommendations">
                 <h2>Recomendações</h2>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, delectus dolor? Assumenda
@@ -82,11 +102,9 @@
                     <li><a href="">Lorem, ipsum dolor.</a></li>
                     <li><a href="">Lorem, ipsum dolor.</a></li>
                 </ol>
-            </div>
-        </section>
+            </section>
 
-        <section id="about">
-            <div class="container">
+            <section id="about">
                 <h2>Sobre nós</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam at, non deleniti quo, corporis
@@ -100,15 +118,15 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ullam at, non deleniti quo, corporis
                     quam debitis quis nemo, libero minus? Magni sequi nihil aspernatur illum nam fugit hic est.
                 </p>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="page-footer">
-        <div class="container">
-            <p>Copyright &copy; 2026 Pedro Cramer e Thales Sardinha. Todos os direitos reservados.</p>
-        </div>
+        <p>Copyright &copy; 2026 Pedro Cramer e Thales Sardinha. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="src/scripts/global.js"></script>
 </body>
 
 </html>

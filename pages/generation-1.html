@@ -4,25 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="../src/assets/images/favicon.ico" type="image/x-icon">
+    <title>RetroEvo | Geração 1</title>
     <link rel="stylesheet" href="../src/styles/global.css">
     <link rel="stylesheet" href="../src/styles/pages/generation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header class="page-header">
-        <div class="container">
-            <img src="" alt="logo do site" class="logo">
+        <a href="/">
+            <img src="../src/assets/images/logo-lpw.png" alt="logo do site" class="logo">
+        </a>
 
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#generations">Gerações</a></li>
-                    <li><a href="#recommendations">Recomendações</a></li>
-                    <li><a href="#about">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </div>
+        <button class="btn btn-mobile">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#generations">Gerações</a></li>
+                <li><a href="#recommendations">Recomendações</a></li>
+                <li><a href="#about">Sobre nós</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <section id="hero">
             <h1>GERAÇÃO 1</h1>
@@ -31,10 +38,12 @@
         <section id="gen-info">
             <div class="container">
                 <div class="gen-list">
-                    <div class="gen-console">
-                        <img src="../src/assets/images/console-gen-1.png" alt="Console mais vendido (imagem)" />
-                        <h2>Mangnavox Odissey - 1972</h2>
-                    </div>
+                    <aside class="gen-console">
+                        <figure>
+                            <img src="../src/assets/images/console-gen-1.png" alt="Console mais vendido (imagem)" />
+                            <figcaption>Mangnavox Odissey - 1972</figcaption>
+                        </figure>
+                    </aside>
                     <div class="gen-description">
                         <p>A primeira geração de consoles (1972–1977) marcou a estreia dos videogames domésticos. Eram
                             sistemas analógicos básicos com gráficos em preto e branco e jogos de "luz e sombra" fixados
@@ -51,6 +60,8 @@
             <p>Copyright &copy; 2026 Pedro Cramer e Thales Sardinha. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="../src/scripts/global.js"></script>
 </body>
 
 </html>

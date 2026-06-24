@@ -7,7 +7,7 @@
     background-size: cover;
     position: relative;
 
-    & h1 {
+    .hero-text {
         text-align: center;
         position: absolute;
         top: 50%;
@@ -23,21 +23,85 @@
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
 
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        .gen-card.image-card {
+            display: none;
+        }
+    }
+
+    @media (max-width: 800px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+
+        .gen-card.image-card {
+            display: block;
+        }
+    }
+
+    @media (max-width: 500px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+
+        .gen-card.image-card {
+            display: none;
+        }
+    }
+
     .gen-card {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         aspect-ratio: 1 / 1;
-        background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../../assets/images/card-bg.jpg');
+        background-image: url('../../assets/images/card-bg.jpg');
         transition: all 300ms ease-out;
         text-decoration: none;
-        font-family: "Pixelify Sans", sans-serif;
-        font-size: 3rem;
-        color: var(--pink-500);
-        text-shadow: 2px 2px #000;
+
+        & h3 {
+            font-size: 3rem;
+            color: var(--pink-500);
+            text-align: center;
+            text-shadow: 2px 2px #000;
+            z-index: 1;
+        }
+
+        & .dark-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            opacity: 0.6;
+            transition: all 300ms ease-out;
+        }
 
         &:hover {
             transform: scale(1.1);
+
+            & .dark-overlay {
+                opacity: 0.2;
+            }
+        }
+
+        &.image-card {
+            position: relative;
+            background: none;
+
+            & img {
+                max-width: 100%;
+                height: 70%;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
+            &:hover {
+                transform: none;
+            }
         }
     }
 }

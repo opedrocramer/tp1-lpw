@@ -1,8 +1,8 @@
 .page-footer {
     display: flex;
     justify-content: flex-start;
-    padding: 3rem 0;
+    padding: 3rem 6rem;
+    font-size: 1.8rem;
     background-color: var(--violet-900);
-    font-family: "Pixelify Sans", sans-serif;
     color: var(--pink-500);
 }
