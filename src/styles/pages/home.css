@@ -111,3 +111,26 @@
         list-style-position: inside;
     }
 }
+
+#hero-paragraph {
+    font-family: monospace;
+    line-height: 1em;
+    border-right: 1rem solid;
+    box-sizing: content-box;
+    width: 56ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 6s steps(56), blinking .5s infinite step-end 6s alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
