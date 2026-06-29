@@ -79,7 +79,7 @@
             transition: all 300ms ease-out;
         }
 
-        &:hover {
+        &:hover, &:focus {
             transform: scale(1.1);
 
             & .dark-overlay {
@@ -113,14 +113,15 @@
 }
 
 #hero-paragraph {
+    font-size: min(3.8vw, 3rem);
     font-family: monospace;
     line-height: 1em;
-    border-right: 1rem solid;
+    border-right: .6em solid;
     box-sizing: content-box;
-    width: 56ch;
+    width: 41ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 6s steps(56), blinking .5s infinite step-end 6s alternate;
+    animation: typing 4s steps(41), blinking .5s infinite step-end 4s alternate;
 }
 
 @keyframes typing {

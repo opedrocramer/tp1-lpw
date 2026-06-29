@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 2.4rem;
+    font-size: min(5vw, 2.4rem);
     line-height: 2em;
 }
 
@@ -30,12 +30,12 @@ h1, h2 {
 
 h1 {
     line-height: 2em;
-    font-size: 5rem;
+    font-size: min(8vw, 6rem);
 }
 
 h2 {
-    font-size: 4.4rem;
-    line-height: 3em;
+    font-size: min(6vw, 5rem);
+    line-height: 2em;
     color: var(--violet-900);
 }
 
@@ -59,4 +59,13 @@ a {
 
 .container {
     margin: 0 8%;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+::selection {
+    background-color: var(--pink-500);
+    color: var(--yellow-300);
 }
