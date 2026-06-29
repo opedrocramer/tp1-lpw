@@ -1,3 +1,5 @@
+// Menu hamburguer
+
 const mobileBtn = document.querySelector('.btn-mobile');
 const navLinks = document.getElementById('nav-links');
 
